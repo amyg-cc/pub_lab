@@ -7,3 +7,8 @@ class Pub:
 
     def add_money(self, money):
         self.till += money
+
+    def sell_drink(self, drink, customer):
+        self.till += drink.price
+        customer.wallet -= drink.price
+

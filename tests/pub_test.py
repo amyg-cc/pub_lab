@@ -21,6 +21,6 @@ class TestPub(unittest.TestCase):
         self.assertEqual(900, self.pub.till)
 
     def test_sell_drink(self):
-        self.pub.sell_drink(self.drink_1.price, self.customer_1)
+        self.pub.sell_drink(self.drink_1, self.customer_1)
         self.assertEqual(90, self.customer_1.wallet)
         self.assertEqual(810, self.pub.till)
